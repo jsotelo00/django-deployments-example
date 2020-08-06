@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+{% load my_extras %}
+{% block body_block %}
+    <h1>Welcome to index</h1>
+    <h1>This is index.html page showing ! </h1>
+
+    <h2>{{ text|upper }}</h2>
+    <h2>{{ number|add:2 }}</h2>
+
+    <h2>Im cuttign wold with custom filter: {{ text|cutt:'world' }}</h2>
+{% endblock%}
